@@ -17,7 +17,7 @@ let f = `The length of a is ${a.length * 2}`;
 // function greet(name){
 //     return `Hello, ${name}!`;
 // }
-// console.log(greet("Pratiksha"));
+// console.log(greet("siva"));
 
 
 
