@@ -1,4 +1,4 @@
-gitJAVASCRIPT ASYNCHRONOUS PROGRAMMING - SYNOPSIS
+JAVASCRIPT ASYNCHRONOUS PROGRAMMING - SYNOPSIS
 ===============================================
 
 This script demonstrates three core async concepts in JavaScript:
