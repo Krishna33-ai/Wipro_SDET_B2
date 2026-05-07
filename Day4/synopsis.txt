@@ -1,0 +1,457 @@
+
+// Synopsis
+
+// -----------------------------------------------------DAY 1-------------------------------------------------------------------
+
+// What is javaScript?
+// -> javaScript is lightweight , interpreted high level language
+// -> generally use to make web pages
+// -> it is a interperted language
+
+// -> HTML is used for structure 
+// -> CSS is used for Design
+
+// **** And every browser supports it , and it runs on their engine , every browser have there own engine Chromium-based browsers
+
+// Then We have learnt What is the difference between declaration and initilisation 
+// Declaration is used to declare a variable
+
+// let abc;
+
+// initilisation is used to initilise a variable
+
+// abc = 5;
+
+// Declaration and initilisation together looks like
+
+// let abc = 5;
+
+// after that we have learnt what is the difference between VAR and LET AND CONST
+//  ->  var is applicable everywhere
+//  ->  let is limited to braces , {}
+
+
+// Then we have talked about Node js and js
+
+// >>> Node js is runtime of javaScript
+
+// ->>> javaScript is a client side scripting 
+// ----features of js
+// -> fast driven 
+// -> dynamic typing 
+
+// Then we studied about Client -Server- Architecture
+// -> Request and Response Is made in it 
+// client request data from the server using https
+// and get the resposne from it 
+
+// Whatever we do in js we will get results in Json File 
+
+// --> Json file is nothing but the object which stores the data in key value pairs
+
+
+
+// *******Once we made the request and gets the response the connection is closed********
+
+// There are 3 states of reqest response Cycle
+// 1. pending - process is still pending
+// 2. Succesfull - process is completed and the client gets what he wants
+// 3. Failed - the process  is failed due to some internal errrors
+
+
+// Erros can be like 404 , 500, 204 208, 501 etc
+
+// most important
+// When we do login it uses post requests and not the get
+
+
+// Then we had performed some basic opertions on string like
+
+// let str= "Akrmashit Sha";
+
+// console.log("String:", str);
+// console.log("Length of string:", str.length); //  gives the length of string
+// console.log("Uppercase:", str.toUpperCase()); // convert to Uppercase
+// console.log("Lowercase:", str.toLowerCase()); // convert to lowercase
+// console.log("Substring (0-5):", str.substring(0, 5)); // gives the substring from 0 to 5 *** remember this 0 is included and 5 is exclusive
+
+
+// Then we performed some mathematical and logical operations
+
+// let a = 5;
+// let b = 6;
+
+// -----> Mathematical operations <-----
+// console.log("Addition:", a + b);
+// console.log("Subtraction:", a - b);
+// console.log("Multiplication:", a * b);
+// console.log("Division:", a / b);
+// console.log("Remainder:", a % b); // Remainder (Modulo)
+
+// ----> Logical operations  <-----
+// console.log("a > b:", a > b); // F
+// console.log("a < b:", a < b); // T
+// console.log("a == b:", a == b); // F === Strict equality (checks value and type)
+// console.log("a != b:", a != b); // T
+// console.log("a >= b:", a >= b); // F
+// console.log("a <= b:", a <= b); // T
+
+// then we learnt about objects in js and some basic operatins on it
+
+// let obj = {
+//     name: "Alice",
+//     age: 30,
+//     city: "New York"
+// }
+// console.log("Object:", obj);         --->        print the whole object file in curley braces in a single line
+// console.log("Name:", obj.name);      --->        prints the Name: Alice
+// console.log("Age:", obj.age);        --->        prints the Age: 30
+// console.log("City:", obj.city);      --->        prints the City: New York
+
+// then we have learnt about the loops
+// ---> For loop
+// ---> While loop
+// ---> Do while loop
+
+// then we learnt about how to check the type of the value whether it is string, number , array, boolean , float etc.
+
+// ---> Syntax <----
+// let a = "5";
+
+// console.log(typeOf(a));   >>>> it will give me the type of a,    i.e. string
+// 
+// -----------------------------------------------------------------DAY 2---------------------------------------------------------------
+
+
+// We started our Day with knowing about String Literals 
+
+// -> firstly it is the feature of ES6 
+// -->  represented by back ticks (``)
+// ----> inside these back ticks everything works normally as a javascript file but if we want to add some words in between 
+//       which we don't want to be interereted like a javascript code , we can use dollar and curley braces for that 
+
+
+// ..................for example:......................
+
+// let name = "Anisha Kumari";
+// console.log(`My name is ${name}`);
+
+// it will print My name is Anisha kumari
+
+// we can also done it by using inverted comma, but it looks clumsy for long code so we use this instead
+
+// few more exapmples
+
+// function table(num) {
+//     let result = "";
+//     for (let i = 1; i <= 10; i++) {
+//         // console.log(num + " x " + i + " = " + (num * i)); // Using string concatenation
+//         // result += `${num} x ${i} = ${num * i}\n`;
+//         result += `${num} * ${i} = ${num*i} \t`
+//     }
+//     return result;
+// }
+// console.log(table(5));
+
+
+// function table1(num) {
+
+//     for (let i = 1; i <= 10; i++) {
+//         console.log(num + " x " + i + " = " + (num * i)); // Using string concatenation
+//     }
+// }
+// table1(5);
+
+
+
+
+// After this we have learnt about the arrow functions
+// what is it how it works
+
+// *****Arrow function*****
+
+// Arrow function used to minimise the code into a single line
+
+// let arr = [1, 2, 3, 4, 5, "Aaryan"];
+
+// arr.filter(function(x) {
+// }).forEach(function(abc) {
+//     return typeof x === "number";
+// }).map(function(y) {
+//     return y * 2;
+//     console.log("Element after * 2:", abc * 2);
+// });
+
+
+// if we write a code normally it looks like this as above
+// but if we write it as arrow function it looks like
+
+// arr.filter(x => typeof x === "number").map(y => y * 2).forEach(abc => console.log("Element after * 2:", abc * 2));
+
+
+
+// ##### Filter is used to separate the same type of data from the array 
+// ##### Map is used to transform every element in an array and create a new array with the results
+// ##### foreach is a loop and nothing else 
+
+
+// Then we have learnt about Random function
+// --> Random function is use to get random value between 0 and 1
+// console.log(Math.random());  >>>> it will give me any random value between 0 and 1
+
+// if we want random value between 0 and 100 
+// --> console.log(Math.floor(Math.random() * 100) + 1);  //  it will provide me random value between 0 and 100
+
+
+// then we Talked about Floor and Ceil
+
+// ---> Floor function   is used to get the lower bound value of a float value 
+// example
+// >>>      Math.floor(0.99999);  is 0 
+// >>>      Math.floor(99.99);   is 99
+
+
+// ---> Ceil  function is used to get the upper bound value of a float value 
+// example
+// >>>      Math.ceil(0.9999);   is 1
+// >>>      Math.ceil(99.99);    is 100
+// >>>      Math.ceil (0.1111);  is 1
+
+// then we learnt about typecasting
+// string to Number 
+// number to String
+
+// >>>> Syntax is written below
+
+// let strnum = "5";
+// console.log(Number(strnum));   ***** convert the string into number
+// console.log(String(5));        ***** convert the number into string
+
+// then we learnt typecating into integer and float
+
+// let val = "0.6";
+// console.log(parseInt(val));       *********  0 it will convert string into integer (wokrs like floor give the lower value)
+// console.log(parseFloat(val));     *********  0.6 it will convert string into float (give the same)
+
+// then we learnt about some basic operations on array
+
+// let colors = ["red", "green", "blue"];
+
+
+// *************************************operations*************************************************
+
+
+// console.log(colors.indexOf("yellow"));          >>>> -1
+// console.log(colors.includes("yellow"));         >>>> false
+// console.log(colors.length);                     >>>> 3
+// console.log(colors[3]);                         >>>> undefined
+// console.log(colors[colors.length - 1]);         >>>> "blue"
+// colors.push("yellow");                          >>>> Adds "yellow" to the end of the array
+// console.log(colors);                            >>>> ["red", "green", "blue", "yellow"]
+// colors.pop();                                   >>>> Removes the last element ("yellow")
+// console.log(colors);                            >>>> ["red", "green", "blue"]
+// colors.unshift("purple");                       >>>> Adds "purple" to the beginning of the array
+// console.log(colors);                            >>>> ["purple", "red", "green", "blue"]
+// colors.shift();                                 >>>> Removes the first element ("purple")
+// console.log(colors);                            >>>> ["red", "green", "blue"]
+
+
+// after that we learnt the splice function 
+
+// console.log(colors.splice(0, 1));
+// console.log(colors.splice(1, 2));
+// console.log(colors.splice(1, 3));
+// // console.log(colors.splice(Math.floor(Math.random() * (colors.length - 2)), 1));
+// // let str = "Hello World";
+// // console.log(str.slice(0, 5)); // "Hello"
+
+// after it we learnt about the reduce function 
+// ******************Reduce Function****************************
+
+// >>> Reduce function 
+
+// const prices = [10, 20, 30, 40]; // tasks: find the total of all elements
+// let s = 0;
+// for (let i = 0; i < prices.length; i++) {
+//     s += prices[i]; // s = s + prices[i]
+// }
+
+// it simple way we use to do like this if we want the sum of the array elements , we need to declare a new variable
+
+// but by using reduce function it is much easier
+
+// const total = prices.reduce((acc, curr) => { return acc + curr }, 0);
+// // 0 + 10 = 10     Dry run
+// // 10 + 20 = 30    Dry run 
+// // 30 + 30 = 60    Dry run 
+// // 60 + 40 = 100   Dry run  
+// console.log(total);
+// // console.log("Sum:", s);
+// ->>>>   acc stands for accumulator
+// ->>>>   currr stands for current value from the array
+// ->>>>   0 tells that the initial value of the accumulator is 0
+
+// reduce function inject the next value of current from the array
+
+// more different version of reduce function is written below
+
+
+// const fruitBasket = ['apple', 'banana', 'cherry', 'apple', 'apple', 'banana', 'pineapple']; // apple: 3, banana: 3, cherry: 1, pineapple: 1
+// const tally = fruitBasket.reduce((acc, fruit) => {
+//     acc[fruit] = (acc[fruit] || 0) + 1;
+//     return acc;
+// }, {}); // intial value of acc is an empty object
+// console.log(tally);
+
+
+
+// after this we made a simple login page
+// containing using html css and javascript
+
+
+//--------------------------------------------------------Day4-----------------------------------------------------------
+
+
+
+// Asynchronous :- Asynchronous programming in JavaScript allows code to run non-blocking operations, enabling tasks like network requests or file reading without freezing the main thread. 
+
+// Promise :- A Promise in JavaScript is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+// it has 3 state:
+// 1- pending
+// 2- resolved
+// 3- rejected
+
+// example:- 
+// function getData() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("Data received");
+//         }, 2000);
+//     });
+// }
+ 
+// getData().then((data) => {
+//     console.log(data);
+// }).catch((error) => {
+//     console.error("Error:", error);
+// });
+
+// use then ()to handle the fullfilment and catch() to handle rejection.
+
+// ## setTimeout():- it it use to run a code after the few sec later, mention the time in code.
+
+// setTimeout(() => {
+//      console.log("Data received");
+//  }, 5000);
+
+// ## setInterval():- it run the code after every interval of time.
+ 
+
+//  example:=
+//  setInterval(() => {
+//     console.log("Checking for new data...");
+// }, 3000);
+
+
+// What is fetch()?
+// fetch() is used to request data from an API (server)
+// It returns a Promise
+// The Promise is handled using .then() and .catch()
+// 3. Code Flow Explanation
+// fetch("https://jsonplaceholder.typicode.com/todos")
+// Sends a request to an API
+// Returns a Promise (pending → resolved/rejected)
+// Step 1: Convert response to JSON
+// .then(res => res.json())
+// Converts response into JavaScript object (JSON format)
+// Step 2: Filter Data
+// .then(data => data.filter(d => d.id % 2 === 0))
+// Keeps only even ID records
+// Step 3: Modify Data
+// .then(data => data.map(d => (d.title = "Anisha " + d.title)))
+// Adds prefix "Anisha " to each title
+// Step 4: Display Output
+// .then(data => console.log(data))
+// Prints final processed data to console
+// Step 5: Error Handling
+// .catch(error => console.error("Error fetching data:", error));
+// Handles errors if request fails
+// 4. Key Concepts Used
+// Asynchronous Programming
+// Code does not wait for API response
+// Other tasks can run while data is being fetched
+// Promises
+// Used to handle async operations
+// States:
+// Pending
+// Resolved
+// Rejected
+// Method Chaining
+// Multiple .then() used in sequence
+// Each step processes data and passes it forward
+// 5. Conclusion
+
+// This code shows how JavaScript handles asynchronous operations efficiently using fetch and Promises. It performs data fetching, filtering, transformation, and error handling in a clean and structured way.
+ 
+//-------------------------------------------------------------Day5----------------------------------------------------------------------------
+
+// await fetch()
+// Sends request to internet
+// Waits for response
+// await res.json()
+// Converts response → JavaScript object
+// .filter()
+// Removes unwanted data
+
+// Example:
+
+// .filter(u => u.age > 25)
+//  .map()
+// Converts data into new format
+
+// Example:
+
+// .map(u => u.name)
+//  console.log()
+// Shows final result
+//  Promise
+// Promise = result of async work (future value)
+
+// Sync  -	Runs step by step
+// Async  -	Runs in background
+// Promise - Handles async result
+// async  -	Creates promise function
+// await  -	Waits for promise
+// Synchronous runs line by line, asynchronous runs in background,
+//  Promise handles async operations, and 
+//  async/await is a cleaner way to work with Promises.
+
+
+// Object-Oriented Programming (OOP)
+// Object-Oriented Programming (OOP) is a programming paradigm based on objects and classes.
+// It helps in organizing code into reusable and structured units.
+//  OOP models real-world entities like users, products, bank accounts, etc.
+
+//  Basic Concepts
+
+// Class → Blueprint/template
+// Object → Instance of class
+// Methods → Functions inside class
+// Properties → Variables inside class
+//  1. Encapsulation
+
+// Encapsulation means hiding data and allowing access only through methods.
+// class Bank {  #balance = 0;  deposit(amount) {    this.#balance += amount;  }  getBalance() {    return this.#balance;  }}
+// Private variables (#) cannot be accessed directly.
+//  2. Inheritance
+// Inheritance allows one class to use properties and methods of another class.
+// class Animal {  speak() {    console.log("Animal speaks");  }}class Dog extends Animal {  speak() {    console.log("Dog barks");  }}
+//  extends is used for inheritance
+// super() calls parent class
+// 3. Polymorphism
+// Polymorphism means same method, different behavior.
+//  Method overriding = runtime polymorphism
+// 4. Abstraction
+// Abstraction means hiding complex implementation and showing only essential features.
+// OOP is a programming approach that uses encapsulation, inheritance, polymorphism, and abstraction to create modular, reusable, and maintainable code.
