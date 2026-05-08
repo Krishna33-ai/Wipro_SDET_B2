@@ -147,4 +147,8 @@ function calculatePayroll(staff, taxCallback) {
   return ledger;
 }
 
+<<<<<<< HEAD
 calculatePayroll(employees, taxLogic);
+=======
+calculatePayroll(employees, taxLogic);
+>>>>>>> c2438fd (inheritance overview)

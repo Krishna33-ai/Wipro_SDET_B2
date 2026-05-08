@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 class BankAccount {
     #balance = 0; // private variable | Access modifier
  
@@ -74,4 +74,3 @@ PriyaAccount.deposit(500);
 PriyaAccount.withdraw(1000);
 console.log(`Final Balance: ₹${PriyaAccount.getBalance()}`);
  
->>>>>>> 6ee43fe68f20f0840c92d0a9a9256fcd5cbdb9c2
