@@ -455,3 +455,191 @@
 // 4. Abstraction
 // Abstraction means hiding complex implementation and showing only essential features.
 // OOP is a programming approach that uses encapsulation, inheritance, polymorphism, and abstraction to create modular, reusable, and maintainable code.
+
+// //------------------------------------------------------------------Day6----------------------------------------------------------------------------------
+// Question 1: Flight Data Cleaner
+// Concepts Used
+// 1. Array
+// Used to store raw flight data.
+// const rawFlights = [];
+
+// 2. map()
+// Used to transform each string into an object.
+// array.map()
+
+// 3. split()
+// Used to divide strings.
+// split(":")split("-")
+
+// 4. Number()
+// Converts string price into number.
+// Number(value)
+
+// 5. isNaN()
+// Checks invalid number.
+// isNaN(price)
+
+// 6. filter()
+// Filters valid flights.
+// filter()
+
+// 7. sort()
+// Sorts prices in ascending order.
+// sort((a,b) => a.price - b.price)
+
+// 8. JSON.stringify()
+// Converts array into JSON string.
+// JSON.stringify(data, null, 2)
+
+// Important Things to Remember
+// ✔ Use [] for array access
+// ✔ map() returns new array
+// ✔ filter() returns filtered array
+// ✔ sort() changes original array
+// ✔ Number() converts string to number
+// ✔ isNaN() checks invalid numbers
+
+// Question 2: Shopping Cart Promotion
+// Concepts Used
+// 1. Callback Function
+// Function passed inside another function.
+// applyPromo(cart, isEligible)
+
+// 2. Arrow Function
+// item => {}
+
+// 3. map()
+// Transforms cart items.
+
+// 4. Conditional Checking
+// if(condition)
+
+// 5. Spread Operator
+// Copies object data.
+// { ...item }
+
+// 6. Template Literals
+// `${value}`
+
+// 7. setTimeout()
+// Delays output.
+// setTimeout(() => {}, 1000)
+
+// Important Things to Remember
+// ✔ Callback = function inside another function
+// ✔ Spread operator copies object
+// ✔ Template literal uses backticks `
+// ✔ setTimeout() delay is in milliseconds
+
+// Question 3: Movie Stream Analytics
+// Concepts Used
+// 1. split("|")
+// Separates movie data.
+
+// 2. map()
+// Converts strings into objects.
+
+// 3. Number()
+// Converts views into number.
+
+// 4. isNaN()
+// Checks corrupted data.
+
+// 5. filter()
+// Filters:
+
+
+// Action
+
+
+// Sci-Fi
+
+
+// Views > 5000
+
+
+
+// 6. sort()
+// Descending order sorting.
+// b.views - a.views
+
+// 7. JSON.stringify()
+// Returns JSON string.
+
+// Important Things to Remember
+// ✔ Descending sort:
+// b - a
+// ✔ Ascending sort:
+// a - b
+// ✔ Use:
+// parts[0]
+// NOT:
+// parts(0)
+
+// Question 4: Payroll Processor
+// Concepts Used
+// 1. Callback Function
+// taxLogic()
+
+// 2. Tax Calculation
+// salary * taxRate
+
+// 3. Ternary Operator
+// condition ? value1 : value2
+
+// 4. map()
+// Processes employee data.
+
+// 5. Template Literal
+// `${total}`
+
+// 6. setTimeout()
+// Waits 2000ms.
+
+// 7. Spread Operator
+// ...employee
+
+// Important Things to Remember
+// ✔ Ternary operator syntax:
+// condition ? trueValue : falseValue
+// ✔ setTimeout(fn, 2000) means wait 2 seconds
+// ✔ Always close functions properly with }
+// ✔ Function call syntax:
+// calculatePayroll(employees, taxLogic)
+// NOT:
+// calculatePayroll(employees.taxLogic)
+
+// Most Important JavaScript Functions Used Overall
+// FunctionUsemap()Transform arrayfilter()Filter datasort()Sort arraysplit()Split stringNumber()Convert string to numberisNaN()Check invalid numberJSON.stringify()Convert to JSONsetTimeout()Delay execution
+// Spread Operator (...)
+// Definition
+
+// Spread operator expands elements of array or object.
+
+// Array Example
+// const arr1 = [1, 2];
+// const arr2 = [...arr1, 3, 4];
+
+// console.log(arr2);
+// Heap Memory
+// Definition
+
+// Heap stores reference type data.
+
+// Stored In Heap
+// Objects
+// Arrays
+// Functions
+// Stack Memory
+// Definition
+
+// Stack stores primitive data and function calls.
+
+// Works in LIFO order:
+// Last In First Out.
+// Prototype
+// Definition
+
+// Prototype is a mechanism in JavaScript that allows objects to inherit properties and methods from another object.
+
+// Every JavaScript object has a hidden link to a prototype object.
